@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firewatch-ai"
+version = "0.1.0"
+description = "FireWatch AI: detecção de fogo em imagens e vídeos com YOLO12n treinado (GS2-ACV)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "AGPL-3.0" }
+# ultralytics já traz torch, opencv-python, numpy e pillow.
+dependencies = [
+    "ultralytics>=8.3.70",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.29", "python-multipart>=0.0.9"]
+hf = ["huggingface_hub>=0.23"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+firewatch = "firewatch_ai.cli:main"
+
+[tool.setuptools]
+packages = ["firewatch_ai"]
+
+[tool.setuptools.package-dir]
+firewatch_ai = "src"
+
+[tool.setuptools.package-data]
+firewatch_ai = ["data/*.pt", "data/*.json"]

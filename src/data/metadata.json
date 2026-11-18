@@ -1,0 +1,13 @@
+{
+  "modelo": "YOLO12n (Ultralytics), fine-tuning",
+  "dataset": "Fire v3 (Roboflow vufindr/fire-ztoay, licença MIT)",
+  "classes": [
+    "Fire"
+  ],
+  "imgsz": 640,
+  "confianca": 0.25,
+  "pesos": "firewatch_yolo12n_best.pt",
+  "sha256": "1f9299588d28846a8bcbfbc3d1c2b0859a1de98787ca9c336c472e02fe9d46cf",
+  "tamanho_bytes": 5554714,
+  "gerado_em": "2026-11-18"
+}
