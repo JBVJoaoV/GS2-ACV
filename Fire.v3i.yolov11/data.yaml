@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Fire']
+
+roboflow:
+  workspace: vufindr
+  project: fire-ztoay
+  version: 3
+  license: MIT
+  url: https://universe.roboflow.com/vufindr/fire-ztoay/dataset/3
