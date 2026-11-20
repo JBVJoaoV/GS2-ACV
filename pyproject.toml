@@ -11,7 +11,7 @@ requires-python = ">=3.10"
 license = { text = "AGPL-3.0" }
 # ultralytics já traz torch, opencv-python, numpy e pillow.
 dependencies = [
-    "ultralytics>=8.3.70",
+    "ultralytics>=8.3.78",
 ]
 
 [project.optional-dependencies]
